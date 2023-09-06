@@ -1,0 +1,13 @@
+.back-to-top-btn{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    margin: 1.5rem;
+    bottom: 1rem;
+    right: 1rem;
+}

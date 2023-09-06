@@ -1,0 +1,132 @@
+.flex-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 3rem;
+}
+
+.crypto-heading,
+.real-time-heading {
+    font-size: 5.5rem;
+    margin: 0;
+}
+
+.crypto-heading {
+    color: var(--white);
+    /* -webkit-text-stroke-color: var(--white);
+    -webkit-text-stroke-width: 1.5px; */
+}
+
+.crypto-heading:hover {
+    color: var(--white);
+    /* -webkit-text-stroke-color: var(--white); */
+    text-shadow: 0 0 18px #00b3ff;
+    transform: scale(1.04);
+    transition-duration: 0.36s;
+}
+
+.real-time-heading {
+    color: var(--blue);
+}
+
+.info-text {
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.phone-container {
+    width: 40%;
+    position: relative;
+    padding: 1rem;
+}
+
+.iphone {
+    height: 500px;
+    min-width: 300px;
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+}
+
+.gradient {
+    border-radius: 30px;
+    height: 420px;
+    min-width: 240px;
+    width: 40%;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .crypto-heading,
+    .real-time-heading {
+    font-size: 5rem;
+    margin: 0;
+}
+}
+
+@media only screen and (max-width: 1000px){
+    /* .phone-container{
+        width: 30%;
+    }
+    .left-component{
+        width: 70%;
+    } */
+    .iphone {
+        min-width: 270px;
+        width: 50%;
+    }
+    
+    .gradient {
+        min-width: 220px;
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (max-width: 800px){
+   .flex-info{
+    flex-direction: column;
+   }
+   .phone-container{
+    display: block;
+    margin: auto;
+    margin-top: 2.5rem;
+   }
+   .iphone{
+    left: 15%;
+    height: 450px;
+   }
+   .gradient{
+    left: 25%;
+    height: 380px;
+   }
+   .left-component{
+    width: 100%;
+   }
+   .phone-container{
+     width: 100%;
+   }
+   .crypto-heading,
+   .real-time-heading {
+   font-size: 3rem;
+   text-align: center;
+   }    
+   .info-text {
+    text-align: center;
+}
+
+.btn-flex {
+    justify-content: center;
+}
+}
